@@ -1,0 +1,192 @@
+*{
+ margin: 0;
+ padding: 0;
+ -webkit-box-sizing: border-box;
+ -moz-box-sizing: border-box;
+ box-sizing: border-box;
+}
+
+
+body {
+	font-size: 16px;
+    font-family: 'Lato', sans-serif;
+    background: url(../imagenes/alarma.jpg) no-repeat center center;
+    background-size: cover;
+}
+
+table{
+    margin: auto;
+}
+
+.containers {
+	margin: auto;
+	width: 500px;
+	padding: 0;
+	height: auto;
+        padding-bottom: 1rem;
+}
+.fecha{
+background-color: rgba(0,0,0,.3);
+padding: .5rem;
+border: none;
+transition: all .5s;
+width:100%;
+margin: 0;
+}
+.width-2{
+	width: 50%;
+}
+.width-3{
+	width: 100%;
+	display: flex;
+
+}
+.label2{
+	font-weight: bold;
+	background-color: rgba(0, 255, 0, 0.4);
+	/*display: block;*/
+	line-height: 2em;
+	width: 99%;
+	display: block;
+    /*margin: 2px;*/
+}
+.label{
+	font-weight: bold;
+	background-color: rgba(0, 255, 0, 0.4);
+	width: 100%;
+	line-height: 2em;
+}
+.form__top {
+	width: 100%;
+	text-align: center;
+	padding: 2rem 0 1rem
+}
+
+.input2{
+	width: 99%;
+    background: rgba(0,0,0,.7);
+	padding: .4rem;
+	border: none;
+	border-bottom: solid black .1rem;
+	transition: all .5s;
+	color: white;
+	margin-top: 3px;
+}
+.form__top h2 {
+	font-weight: bold;
+	color: white;
+	font-size: 40px;
+}
+
+h2 span {
+	color: yellow;
+}
+
+.form__reg {
+	padding: 0 2rem;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+.btn__form {
+	display: flex;
+	justify-content: space-around;
+	margin-top: 1rem;
+}
+
+.input, .btn__submit,.btn__submit2, .btn__reset{
+ background: rgba(0,0,0,.7);
+	padding: .4rem;
+	margin: .4rem 0;
+	border: none;
+	border-bottom: solid black .1rem;
+	transition: all .5s;
+	color: white;
+}
+
+.input:focus ,.input2:focus {
+	border-bottom: solid white .1rem;
+}
+
+.btn__submit,.btn__submit2, .btn__reset {
+	width: 40%;
+	border-bottom: none;
+	background-color: rgba(0, 255, 0, 0.8);
+	color: black;
+	font-weight: bold;
+}
+.btn__submit:hover {
+	background-color: black;
+	color: white;
+}
+.btn__submit2:hover {
+	background-color: black;
+	color: white;
+}
+.btn__reset{
+    text-decoration: none;
+    text-align: center;
+}
+.btn__reset:hover{
+	background-color: black;
+	color: white;
+}
+
+/*reloj*/
+
+.widget{
+ width: 100%;
+/* margin: 2em;*/
+ /*margin:32px;*/
+}
+
+.widget p ,.input3 {
+ display: inline-block;
+ line-height: 1em;
+}
+.input3{
+font-family: Oswald, Arial;
+ width: 20%;
+ padding: 5px;
+ font-size: 2em;
+ text-align: center;
+ background: rgba(0,0,0,.7);
+ margin-bottom: 40px;
+  color: white;
+}
+.input4{
+font-family: Oswald, Arial;
+width: 100%;
+ padding: 5px;
+ font-size: 2em;
+ text-align: center;
+ background: rgba(0,0,0,.7);
+ margin-bottom: 20px;
+  color: white;
+}
+.fecha {
+ font-family: Oswald, Arial;
+ text-align: center;
+ font-size: 1.5em;
+ margin-bottom: 5px;
+ background: rgba(0,0,0,.7);
+ padding: 10px;
+ width: 100%;
+ color: white;
+}
+
+.reloj{
+ font-family: Oswald, Arial;
+ width: 100%;
+ padding: 5px;
+ font-size: 2em;
+ text-align: center;
+/*background: rgba(0,0,0,.7);*/
+margin-top: 10px;
+  color: white;
+}
+
+.reloj .caja-segundos{
+ display: inline-block;
+}

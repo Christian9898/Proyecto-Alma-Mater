@@ -1,0 +1,220 @@
+*{
+ margin: 0;
+ padding: 0;
+ -webkit-box-sizing: border-box;
+ -moz-box-sizing: border-box;
+ box-sizing: border-box;
+}
+body {
+    font-size: 16px;
+    font-family: 'Lato', sans-serif;
+}
+
+.containers {
+	margin:auto;
+	width: 600px;
+	padding: 0;
+	height: auto;
+    padding-bottom: 1rem;
+    background: #ddd;
+    margin-top: 75px;
+}
+thead tr{
+    background: blue;
+    color: white;
+}
+table{
+    margin: auto;
+    
+}
+.hoversh{
+    list-style: none;
+	margin: 0;
+	padding: 0;
+         font-size: 14px;
+}
+.hoversh:hover{
+    cursor: pointer;
+    background: yellow;
+}
+.transa{
+    background: transparent;
+    border: none;
+}
+.datagrid, .datagriddo{
+    overflow-y: auto;
+    height: 100px;
+    overflow-x: hidden;
+}
+.datagrid table, .datagriddo table{
+    width: 100%;
+    font-size: 14px;
+    border-collapse: collapse; 
+}
+.datagrid table thead th {
+    background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #991821), color-stop(1, #80141C) );
+    background:-moz-linear-gradient( center top, #991821 5%, #80141C 100% );
+    filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#991821', endColorstr='#80141C');
+    background-color:#991821; 
+    color:#FFFFFF; 
+    font-size: 15px; 
+    font-weight: bold; 
+    border-left: 1px solid #B01C26; 
+    width: 20px;
+} 
+.datagriddo table thead th {
+    background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #991821), color-stop(1, #80141C) );
+    background:-moz-linear-gradient( center top, #991821 5%, #80141C 100% );
+    filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#991821', endColorstr='#80141C');
+    background-color:#991821; 
+    color:#FFFFFF; 
+    font-size: 15px; 
+    font-weight: bold; 
+    border-left: 1px solid #B01C26; 
+} 
+.datagrid table thead th:first-child { 
+    border: none; 
+}
+.datagriddo table thead th:first-child { 
+    border: none; 
+}
+.activar{/*resaltar el menu activo*/
+background: red;
+color: white;
+}
+.activar2{/*resaltar el menu activo*/
+background: red;
+color: white;
+}
+.fecha{
+background-color: rgba(0,0,0,.3);
+padding: .5rem;
+border: none;
+transition: all .5s;
+width:100%;
+margin: 0;
+}
+.width-2{
+	width: 49.5%;
+	margin-left: auto;
+	margin-right: auto;
+
+}
+.width-3{
+	width: 100%;
+	display:flex;
+
+}
+.label2{
+	font-weight: bold;
+	background-color: #99CCFF;
+	line-height: 2em;
+	display: block;
+	width: 100%;
+}
+.label{
+	font-weight: bold;
+	background-color: #99CCFF;
+	width: 100%;
+	line-height: 2em;
+}
+p{
+	text-align: center;
+	font-weight: bold;
+	background-color: #99CCFF;;
+	width: 100%;
+	line-height: 2em;
+}
+.width-8{
+	width: 45%;
+	margin-left: auto;
+	margin-right: auto;
+
+}
+.enviados{
+    width: 10%;
+    text-align: center;
+}
+.retirar{
+    height: 100px;
+    overflow-y: auto;
+}
+.form__top {
+	width: 100%;
+	text-align: center;
+	padding: 0.5rem 0 1rem
+}
+textarea{
+    height: 100px;
+    max-height: 150px;
+    width: 100%;
+}
+.input2{
+    background: rgba(0,0,0,.7);
+	padding: .4rem;
+	border: none;
+	border-bottom: solid black .1rem;
+	transition: all .5s;
+	color: white;
+	width: 100%;
+}
+.form__top h2 {
+	font-weight: bold;
+	color: red;
+	font-size: 40px;
+}
+
+h2 span {
+	color: black;
+}
+
+.form__reg {
+	padding: 0 2rem;
+	flex-direction: column;
+	justify-content: center;
+}
+#Derecha,#Izquierda{
+    display: block;
+   margin-top: 15px;
+   margin-bottom: 10px;
+    line-height: 30px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.btn__form {
+	display: flex;
+	justify-content: space-around;
+	margin-top: 1rem;
+}
+
+.input,.input2, .btn__submit, .btn__reset{
+ background: rgba(0,0,0,.7);
+	padding: .4rem;
+	margin: .4rem 0;
+	border: none;
+	border-bottom: solid black .1rem;
+	transition: all .5s;
+	color: white;
+}
+
+.input:focus ,.input2:focus {
+	border-bottom: solid white .1rem;
+}
+
+.btn__submit, .btn__reset {
+	width: 30%;
+	border-bottom: none;
+	background-color:red;
+	color: white;
+	font-weight: bold;
+}
+.btn__submit:hover {
+	background-color: black;
+	color: white;
+}
+
+.btn__reset:hover{
+	background-color: black;
+	color: white;
+}

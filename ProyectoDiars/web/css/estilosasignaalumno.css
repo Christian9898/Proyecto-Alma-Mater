@@ -1,0 +1,209 @@
+*{
+
+	box-sizing: border-box;
+}
+body{
+	margin: 0;
+      background: rgba(229, 190, 1, 0.5)
+}
+.content-form {
+       background:#88eaff ;
+    color: black;
+    overflow: auto;
+    padding: 20px 8px 20px 8px;
+    margin-top: 30px;
+    margin-left:auto; 
+    margin-right:auto;
+    border-radius: 10px;
+    width: 710px;
+
+}
+.datagrid{
+     background: linear-gradient(
+       	200deg,
+        rgba(0, 0, 0, 0.1) 99%,
+       	rgba(0,0,0,0.3) 30%);
+    overflow-x: auto;
+    overflow-y: auto;
+    -webkit-border-radius: 5px; 
+    -moz-border-radius: 5px; 
+    border-radius: 5px; 
+    height: 200px;
+    margin-top: 6px;
+}
+.datagrid table 
+{ 
+    border-collapse: collapse; 
+    text-align: center; 
+    width: 100%; 
+    min-width: 1000px;
+} 
+.datagrid table td a{
+    display: block;
+    text-decoration: none;
+    color: black;
+}
+.datagrid table th {
+    background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #991821), color-stop(1, #80141C) );
+    background:-moz-linear-gradient( center top, #991821 5%, #80141C 100% );
+    filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#991821', endColorstr='#80141C');
+    background-color:#991821; 
+    color:#FFFFFF; 
+    font-size: 15px; 
+    font-weight: bold; 
+    border-left: 1px solid #B01C26; 
+} 
+.formulario__titulo{
+	text-align: center;
+	margin-top: 0;
+	color: rgba(0,0,0,0.7);
+	font-size: 30px;
+}
+.formulario__input, .formulario__label{
+	display: block;
+	width: 100%;
+	font-size: 1.3em;
+
+}
+.formulariodeco{
+	display: block;
+	width: 100%;
+	font-size: 1.3em;
+}
+
+.formulario__input{
+	padding:4px;
+	background: rgba(0,0,0,0.1);
+	border:1px solid rgba(0,0,0,0.3);
+	margin-bottom: 5px;
+
+}
+.formulario__input:focus {
+outline: 1px solid rgba(0,0,0,0.7);
+}
+/*
+.formulario__input:focus + .formulario__label{
+margin-top: -73px;
+}*/
+
+.formulario__label{
+	padding-left: 15px;
+	position: absolute;
+	margin-top: -48px;
+	z-index: -20;
+	color: rgba(0,0,0,0.5);
+	transition: all 0.2s;
+}
+.formulariodeco{
+	background: rgba(0,0,0,0.7);
+	color: white;
+	padding: 5px 20px;
+	cursor: pointer;
+	border:none;
+}/*
+.fijar{
+	margin-top: -73px;
+}*/
+.form-group {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:space-around;
+}
+.width-12{
+	width: 100%;
+}
+.width-4 {
+    width: 33.3%;
+}
+.width-9{
+    margin-top: 20px; 
+}
+.width-10{
+    margin-top: 20px; 
+    width: 50%; 
+}
+.width-8{
+    width:50%;
+    padding-left: 5px;
+    padding-right: 5px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 17px;
+}
+select{
+    width: 100%;
+    height: 30px;
+}
+.sub-form {
+    width: 100%;
+    background: #035c6f;
+    text-align: left;
+    padding: 5px 5px;
+    color: #17dec4;
+    margin-bottom: 20px;
+}
+.tablilla2{
+	width: 100%;
+	background: #8594F5;
+	text-align: center;
+	font-size: 18px;
+}
+.tablilla{
+    width: 100%;
+	text-align: center;
+	font-size: 17px;
+    
+}
+.tablilla2{
+	margin-top:5px; 
+margin-bottom:5px;
+}
+.tablilla td{
+    padding:2px 25px 2px 25px ;
+}
+.tablilla th{
+    padding:0px 25px 0px 25px ;
+}
+.btn {
+    background: #035c6f;
+    color: #ffffff;
+    font-size: 1em;
+    font-weight: bold;
+    border: 1px solid #88eaff;
+    border-radius: 5px;
+    width: 185px;
+    height: 50px;
+    margin-top: 9px;
+    margin-left: 4%;
+    margin-right: 4%;
+}
+.btn:hover {
+    background: #047c96;
+    cursor: pointer;
+}
+.datagrid table tr:hover{
+    background: yellow;
+}
+@media (max-width: 780px){
+.content-form {
+        width: 80%; 
+            border-radius: 0px;
+}
+}
+@media (max-width: 600px){
+.content-form {
+        width: 95%; 
+            border-radius: 0px;
+}
+.width-12,.width-4,.width-8{
+    width: 100%;
+}
+.btn {
+    
+        width: 100%;
+}
+}
+
+.sub-form { 
+    margin-bottom: 27px;
+}

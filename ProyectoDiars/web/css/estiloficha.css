@@ -1,0 +1,259 @@
+*{
+	 box-sizing: border-box;
+}
+body{
+	margin: 0px;
+	padding: 0px;  
+	font-family: 'Abel', sans-serif;
+   /* background-image: url(docencia.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;*/
+}
+.salmain {
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 150px;
+}
+.content-form {
+       background:transparent;
+    color: yellow;
+    margin-top: 30px;
+    overflow: auto;
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+    border-top-left-radius:10px;
+    border-top-right-radius: 10px;
+    display: flex;
+    font-size: 1.2em;
+}
+textarea{
+    height: 100px;
+    max-height: 150px;
+    max-width: 100%;
+}
+.content-form2 {
+    background:transparent;
+    color: yellow;
+    overflow: auto;
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-right: 8px;
+    padding-left: 8px;
+    font-size: 1.2em;
+}
+.bordesino {
+    border-bottom-left-radius:10px;
+    border-bottom-right-radius: 10px;
+}
+.sub-title {
+    text-align: center;
+    font-size: 1.5em;
+    color: black;
+    margin: 10px auto;
+}
+.sub-title:after {
+    content: "";
+    width: 100px;
+    height: 2px;
+    background:black;
+    display: block;
+    margin: auto;
+}
+.form-control {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid rgba(13, 60, 115, 0.36);
+    margin-top: 4px;
+} 
+.sub-form {
+    width: 100%;
+    background: black;
+    text-align: left;
+    padding: 5px 5px;
+    color: #17dec4;
+    margin-bottom: 3px;
+    margin-top: 5px;
+}
+.sub-form2 {
+    width: 50%;
+    background: black;
+    text-align: left;
+    padding: 5px 5px;
+    color: #17dec4;
+    margin-bottom: 0px;
+    margin-top: 5px;
+}
+.damecolor{
+    background: rgba(53, 21, 15, 0.8);
+    padding-right: 3px;
+    padding-left: 3px;
+    padding-bottom: 3px;
+}
+.form-group {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:space-around;
+}
+.width-4 {
+    width: 100%;
+}
+.width-12{
+	width: 100%;
+}
+.width-3{
+    width: 25%;
+}
+.width-5{
+    width: 25%;
+}
+.width-9{
+    margin-top: 20px; 
+     margin-bottom: 20px;
+     width: 50%;
+     text-align: center;
+}
+.width-10{
+    margin-top: 20px; 
+    margin-bottom: 20px;
+    width: 50%; 
+}
+.width-8{
+    width: 50%;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+.ladoderecho{
+    background: rgba(53, 21, 15, 0.8);
+    width: 50%;
+    padding: 3px;
+    margin: 8px;
+}
+.divpadres1{
+    background: rgba(53, 21, 15, 0.8);
+    width: 50%;
+    padding: 3px;
+    margin: 8px;
+}
+.divpadres2{
+    background: rgba(53, 21, 15, 0.8);
+    width: 50%;
+    padding: 3px;
+    margin: 8px;
+    display: none;
+}
+.ocultobuscar{
+    display:none;
+}
+.btn {
+     margin-top: 5px;
+    background: black;
+    color: #ffffff;
+    font-size: 1em;
+    font-weight: bold;
+    border: 1px solid #88eaff;
+    border-radius: 5px;
+    width: 150px;
+    margin-bottom: 9px;
+}
+p{
+    color: yellow;
+    font-size: 20px;
+    font-weight: bold;
+}
+.btn:hover {
+    background: red;
+    cursor: pointer;
+}
+.radiobt input[type="radio"],.radiobt input[type="radio"]{
+display: none;
+}
+.radiobt label{
+	color:white;
+	padding: 5px 5px 5px 30px;
+	display: inline-block;
+	position: relative;
+	border-radius: 5px;
+	cursor: pointer;
+	-webkit-transition: all 0.3s ease;
+	-o-transition:all 0.3s ease;
+	transition:all 0.3s ease;
+
+}
+.radiobt label:hover {
+background: blue;
+}
+.radiobt label:before {
+content: "";
+width: 9px;
+height: 9px;
+display: inline-block;
+background: none;
+border:2px solid white;
+border-radius: 50%;
+position: absolute;
+left: 10px;
+top: 10px;
+}
+.radiobt input[type="radio"]:checked + label{
+padding: 5px 15px;
+background: rgba(255,120,0,.3);
+border-radius: 2px;
+color: white;
+}
+.radiobt input[type="radio"]:checked + label:before{
+display: none;
+}
+.derechos {
+    background: rgba(0, 0, 0, 0.72);
+    padding: 15px 0px;
+    color: #fff;
+    text-align: center;
+    font-size: 1em;
+}
+.derechos a {
+    color: #0ad0ff;
+}
+
+@media (max-width: 1200px){
+.content-form,.content-form2 {
+        width: 80%; 
+        border-radius: 0px;
+        display: block;
+        padding-left: 0;
+        padding-right: 0;
+}
+.btn,.btn2{  
+        width: 20%;
+        display: inline-block;
+}
+.ladoderecho,.divpadres1,.divpadres2,.damecolor{
+    width: 90%;    
+            margin-right: auto;
+        margin-left: auto;
+}
+}
+@media (max-width: 765px){
+.content-form,.content-form2 {
+        width: 100%; 
+        border-radius: 0px;
+        display: block;
+}
+.btn,.btn2{  
+        width: 20%;
+        display: inline-block;
+}
+.ladoderecho,.divpadres1,.divpadres2,.damecolor{
+    width: 99%;    
+            margin-right: auto;
+        margin-left: auto;
+}
+}
+@media (max-width: 460px){
+.btn,.btn2{  
+        width: 100%;
+}
+ 
+}

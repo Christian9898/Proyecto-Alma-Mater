@@ -1,0 +1,537 @@
+/*Estructura web*/
+*{
+margin:  0px;
+padding: 0px;
+box-sizing: border-box;
+}
+
+body{
+background: white;
+min-height: 100vh;
+}
+main{
+	background:url(../imagenes/fonditotrabajo2.jpg) no-repeat center center;
+    background-size: cover;	
+    width: 99%;
+	margin: 0px 0.5%;
+	position: absolute;
+	padding: 0px;
+}
+header{
+	width: 100%;
+	height: 85px;
+	background: #fff95f;
+}
+.logocole{
+	width: 35%;
+	height: 100%;
+}
+.letres{
+width: 65%;
+height: 50%;
+}
+.prueba{
+	width: 200px;
+	height: 83px;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+}
+/*barra social*/
+.contenedor{
+width: 100%;
+height: 25.91px;
+background-color: #00138e;
+padding: 0;
+margin: 0;
+position: absolute;
+}
+.acceso{
+	list-style-type: none;
+}
+.acceso > li{
+float: left;
+margin: 0px 4px;
+}
+.acceso2{
+    display: table;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    float: right;
+}
+.acceso2 > li{
+    display: table-cell;
+    text-align: center;
+    line-height: 1.5em;
+    background: black;
+    height: 25.91px;
+}
+.acceso2 > li > a{
+    text-decoration: none;
+    color: white;
+    margin: 0px 4px;
+    display: block;
+}
+
+.acceso2 > li:hover{
+    background: #E6344A;
+}
+/*menu despegable*/
+.menu_bar{
+display: none;
+}
+.listash{
+width: 100%;
+}
+.listash nav{
+	background:black;
+	z-index: 1000;
+	width: 100%;
+}
+.listash nav ul{
+	list-style: none;
+        margin:0 auto;
+}
+.listash nav ul li{
+	display: inline-block;
+	position: relative;
+}
+.listash nav ul li:hover{
+background:#E6344A;
+}
+
+.listash nav ul li a{
+	color: #fff;
+	display: block;
+	text-decoration: none;
+	padding: 20px;
+}
+/*.listash nav ul li a span{
+	margin-right: 10px;
+}*/
+.listash nav ul li:hover .children{
+	display: block;
+}
+.listash nav ul li .children{
+display: none;
+background :#023859;
+position: absolute;
+width: 110%;
+z-index: 1000;
+}
+.listash nav ul li .children li{
+display: block;
+overflow: hidden;
+border-bottom: 1px solid rgba(255,255,255,.5);
+}
+.listash nav ul li .children li a{
+display: block;
+}
+.listash nav ul li .children li a span{
+float: right;
+position: relative;
+top: 3px;
+margin-right: 0;
+margin-left: 10px;
+}
+.listash nav ul li .caret{
+    position: relative;
+    margin-right: 0;
+    margin-left: 8px;
+}
+
+/*trabajo*/
+.trabajo {
+margin:5px 0px;
+display: flex;
+position: relative;
+width: 100%;
+height: 70px;
+background: url(../imagenes/fondo.jpg) no-repeat center center;
+background-size: cover;
+font-size: 15px;
+}
+.minedu{
+	width: 350px;
+	height: 100%;
+}
+.enlacesh{
+	height: 45px;
+	margin: auto;
+}
+.trabajo h2,h3{
+   text-align: center;
+   margin: auto;
+}
+.ingresar{
+	width: 150px;
+	margin-top: 12px;
+}
+/*datos generales*/
+h1{
+	text-align: center;
+	margin: 15px 0px;
+	color: white;
+	font-size: 40px;
+        background: black;
+}
+.datgene{
+margin: auto;
+background: rgba(0, 0, 0, 0.8);
+width: 550px;
+color: white;
+padding: 20px 50px;
+box-shadow: 0 0 20px 0 rgba(255,255,255,.3);
+
+}
+.subti{
+  text-align: center;
+  line-height: 30px;
+  font-family: inherit;
+  font-size: 25px;
+  margin-bottom: 20px;
+  color: white;
+  font-weight: bold;
+
+}
+.fecna{
+  display: inline-block;
+  margin-bottom: 30px;
+  margin-top: 20px;
+  margin-right: 85px;
+  padding: 0;
+  font-weight: bold;
+}
+input[type="number"]{
+	display: inline-block;
+	margin: 0px 0px 0px 23px;
+	width: 55px;
+}
+.sepa{
+	display: inline-block;
+	margin: 0px 0px 0px 23px;
+}
+.labe {
+  margin: 7px 0px;
+  padding: 0;
+  font-weight: bold;
+  display: block;
+}
+
+.labe2{
+display: inline-block;
+width:210px;
+margin: 0px 30px 0px 0px;
+}
+
+.labe3{
+display: inline-block;
+width:210px;
+}
+
+.todtext{
+  border: none;
+  border-bottom: 1px solid #fff;
+  background: rgba(255,0,0,.4);
+  outline: none;
+  height: 30px;
+  color: white;
+  font-size: 16px;
+  width: 100%;
+  margin-bottom: 20px;
+  border-radius: 5px;
+}
+
+.apellido{
+  display: inline-block;
+  border: none;
+  border-bottom: 1px solid #fff;
+  background: rgba(255,0,0,.4);
+  outline: none;
+  height: 30px;
+  color: #fff;
+  font-size: 16px;
+  width:210px;
+}
+.calendario{
+  display: inline-block;
+  border: none;
+  border-bottom: 1px solid #fff;
+  background: rgba(255,0,0,.4);
+  outline: none;
+  height: 30px;
+  color: #fff;
+  font-size: 16px;
+  width:210px;
+}
+.apellido2{
+  display: inline-block;
+  border: none;
+  border-bottom: 1px solid #fff;
+  background: rgba(255,0,0,.4);
+  outline: none;
+  height: 30px;
+  color: #fff;
+  font-size: 16px;
+  margin: 0px 30px 20px 0px;
+  width:210px;
+}
+
+input[type="file"]{
+  border: none;
+  background: rgba(120,120,120,.5);
+  outline: none;
+  color: #fff;
+  font-size: 12px;
+  width: 100%;
+  margin-top: 10px;
+}
+input[type="radio"]{
+display: none;
+}
+.radiobt label{
+	color:white;
+	padding: 5px 5px 5px 30px;
+	display: inline-block;
+	position: relative;
+	border-radius: 3px;
+	cursor: pointer;
+	margin :10px 5px;
+	-webkit-transition: all 0.3s ease;
+	-o-transition:all 0.3s ease;
+	transition:all 0.3s ease;
+
+}
+.radiobt label:hover {
+background: rgba(255,0,0,.3);
+}
+.radiobt label:before {
+content: "";
+width: 9px;
+height: 9px;
+display: inline-block;
+background: none;
+border:2px solid white;
+border-radius: 50%;
+position: absolute;
+left: 10px;
+top: 7px;
+}
+input[type="radio"]:checked + label{
+padding: 5px 15px;
+background: red;
+border-radius: 2px;
+color: white;
+}
+input[type="radio"]:checked + label:before{
+display: none;
+}
+
+input[type="submit"] ,input[type="button"],input[type="reset"]{
+  border: none;
+  outline: none;
+  height: 40px;
+  background: rgba(255,0,0,0.8);
+  color: activecaption;
+  font-size: 18px;
+  border-radius: 5px;
+  width: 120px;
+  margin: 0px 9px;
+  font-weight: bold;
+}
+input[type="submit"]:hover,input[type="button"]:hover,input[type="reset"]:hover {
+  background: yellow;
+  color: black;
+}
+.botonsh{
+
+	text-align: center;
+	margin: 30px auto 30px;
+}
+footer{
+	width: 100%;
+	background:black; 
+	padding: 30px;
+}
+footer p{
+margin: 3px;
+font-family: 'Arial';
+font-style: italic;
+color: white;
+}
+footer a{
+    margin: 4px;
+}
+footer div{
+    margin: 15px 0px auto;
+    text-align: center;
+    color: white;
+
+}
+@media screen and (max-width: 365px){
+.acceso2{
+    display: inline-grid;
+    list-style-type: none;
+    margin:  0;
+    padding: 0;
+    float: right;
+}
+}
+@media screen and (max-width: 1260px){
+main{
+padding-top: 87px;
+}
+.menu_bar{
+	display: block;
+	width: 99%;
+	position: fixed;
+	top: 0;
+	background: black;
+	z-index: 1000;
+}
+.menu_bar .bt-menu{
+	display: block;
+	padding: 20px;
+	color: #fff;
+	overflow: hidden;
+	font-size: 25px;
+	font-weight: bold;
+	text-decoration: none;
+}
+.menu_bar span{
+	float: right;
+	font-size: 40px;
+}
+.listash nav{
+width: 60%;
+height: calc(100% - 100px);
+position: fixed;
+right: 100%;
+margin: 0;
+overflow: scroll;
+top:87px;
+left: 0.5%;
+}
+.listash nav ul li{
+	display: block;
+	border-bottom: 1px solid rgba(255,255,255,.5); 
+}
+.listash nav ul li a{
+	display: block;
+}
+
+.listash nav ul li .children{
+	width: 100%;
+	position: relative;
+}
+.listash nav ul li .children li a{
+	margin-left: 20px;
+}
+.listash nav ul li .caret{
+	float: right;
+}
+}
+/*tamaño de logo*/
+@media screen and (max-width: 550px){
+.prueba{
+    width: 160px;
+    height: 55px;
+    position: relative;
+    float: left;
+    top: 27px;
+    left: 5px;
+}
+}
+@media screen and (max-width: 830px){
+    .trabajo {
+height: 50px;
+}
+    .minedu{
+    width:250px;
+}
+.enlacesh{
+    font-size: 12px;
+    height: 35px;
+}
+.ingresar{
+	width: 130px;
+	margin-top: 5px;
+}
+}
+
+@media screen and (max-width: 609px){
+.minedu,.apar{
+    display: none;
+}
+.minedu2{
+    width: 60px;
+    height: 100%;
+    display: block;
+}
+.apar2{
+    display: block;
+}
+
+.ingresar{
+	width: 100px;
+	margin-top: 8px;
+}
+.datgene{
+    width: 85%;
+    padding: 20px 40px;
+}
+.labe,.labe2,input[type="text"],.fecna{
+    width: 100%;
+}
+.calendario{
+    width: 100%;
+    margin-bottom: 15px;
+}
+.labe8{
+    width: 70%;
+}
+.radiobt{
+    text-align: center;
+}
+input[type="number"]{
+	display: inline-block;
+	margin: 0px 0px 10px 10px;
+	width: 55px;
+}
+.fecna{
+  margin-bottom: 15px;
+  margin-top: 20px;
+  padding: 0;
+  font-weight: bold;
+}
+}
+@media screen and (max-width: 454px){
+    .sepa{
+	display: inline-block;
+	margin: 0px 0px 0px 8px;
+}
+input[type="number"]{
+	display: inline-block;
+	margin: 0px 0px 10px 10px;
+	width: 50px;
+}
+input[type="submit"],input[type="button"],input[type="reset"]{
+width: 85%;
+margin-bottom: 3px;
+
+}
+
+}
+@media screen and (max-width: 360px){
+.enlacesh{
+    font-size: 11px;
+    height: 35px;
+}
+}
+@media screen and (min-width: 610px){
+    .apar2,.minedu2{
+    display: none;
+}
+
+}

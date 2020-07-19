@@ -1,0 +1,529 @@
+/*Estructura web*/
+*{
+margin:  0px;
+padding: 0px;
+box-sizing: border-box;
+}
+
+body{
+background: white;
+
+}
+main{
+	background: white;
+	width: 99%;
+	margin: 0px 0.5%;
+	position: absolute;
+	padding: 0px;
+}
+header{
+	width: 100%;
+	height: 85px;
+	background: #fff95f;
+}
+.logocole{
+	width: 35%;
+	height: 100%;
+}
+.letres{
+width: 65%;
+height: 50%;
+}
+.prueba{
+	width: 200px;
+	height: 83px;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+}
+/*barra social*/
+.contenedor{
+width: 100%;
+height: 25.91px;
+background-color: #00138e;
+padding: 0;
+margin: 0;
+position: absolute;
+}
+.acceso{
+	list-style-type: none;
+}
+.acceso > li{
+float: left;
+margin: 0px 4px;
+}
+.acceso2{
+    display: table;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    float: right;
+}
+.acceso2 > li{
+    display: table-cell;
+    text-align: center;
+    line-height: 1.5em;
+    background: black;
+    height: 25.91px;
+}
+.acceso2 > li > a{
+    text-decoration: none;
+    color: white;
+    margin: 0px 4px;
+    display: block;
+}
+
+.acceso2 > li:hover{
+    background: #E6344A;
+}
+/*menu despegable*/
+.menu_bar{
+display: none;
+}
+.listash{
+width: 100%;
+}
+.listash nav{
+	background:black;
+	z-index: 1000;
+	width: 100%;
+}
+.listash nav ul{
+	list-style: none;
+        margin:0 auto;
+}
+.listash nav ul li{
+	display: inline-block;
+	position: relative;
+}
+.listash nav ul li:hover{
+background:#E6344A;
+}
+
+.listash nav ul li a{
+	color: #fff;
+	display: block;
+	text-decoration: none;
+	padding: 20px;
+}
+/*.listash nav ul li a span{
+	margin-right: 10px;
+}*/
+.listash nav ul li:hover .children{
+	display: block;
+}
+.listash nav ul li .children{
+display: none;
+background :#023859;
+position: absolute;
+width: 110%;
+z-index: 1000;
+}
+.listash nav ul li .children li{
+display: block;
+overflow: hidden;
+border-bottom: 1px solid rgba(255,255,255,.5);
+}
+.listash nav ul li .children li a{
+display: block;
+}
+.listash nav ul li .children li a span{
+float: right;
+position: relative;
+top: 3px;
+margin-right: 0;
+margin-left: 10px;
+}
+.listash nav ul li .caret{
+    position: relative;
+    margin-right: 0;
+    margin-left: 8px;
+}
+
+/*slider*/
+.suti{
+    max-width: 100%;
+    height: 100%;
+    width: 100%;
+}
+.pasimagenes{
+display: flex;
+align-items: center;
+justify-content: center;
+padding: auto;
+}
+
+.container-all{
+    position: relative;
+    width: 100%;
+    border-radius: 6px;
+    overflow: hidden;
+
+}
+
+.slide{
+    display: flex;
+    transform: translate3d(0, 0, 0);
+    transition: all 600ms;
+    animation-name: autoplay;
+    animation-duration: 20s;
+    animation-direction: alternate;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+}
+
+.item-slide{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    flex-shrink: 0;
+    flex-grow: 0;
+    max-width: 100%;
+    height: 550px;
+    width: 100%;
+}
+
+.pagination{
+    position: absolute;
+    bottom: 20px;
+    left: 0;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.pagination-item{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 2px solid white;
+    width: 16px;
+    height: 16px;
+    border-radius: 4px;
+    overflow: hidden;
+    cursor: pointer;
+    background: rgba(255, 255, 255, 0.5);
+    margin: 0 10px;
+    text-align: center;
+    transition: all 300ms;
+}
+
+.pagination-item:hover{
+    transform: scale(2);
+}
+
+.pagination-item img{
+    display: inline-block;
+    max-width: none;
+    height: 100%;
+    transform: scale(1);
+    opacity: 0;
+    transition: all 300ms;
+}
+
+.pagination-item:hover img{
+    opacity: 1;
+    transform: scale(1);
+}
+
+
+input[id="1"]:checked ~ .slide{
+    animation: none;
+    transform: translate3d(0, 0, 0);
+}
+
+input[id="1"]:checked ~ .pagination .pagination-item[for="1"]{
+    background: #fff;
+}
+
+input[id="2"]:checked ~ .slide{
+    animation: none;
+    transform: translate3d(calc(-100% * 1), 0, 0);
+}
+
+input[id="2"]:checked ~ .pagination .pagination-item[for="2"]{
+    background: #fff;
+}
+
+
+input[id="3"]:checked ~ .slide{
+    animation: none;
+    transform: translate3d(calc(-100% * 2), 0, 0);
+}
+
+input[id="3"]:checked ~ .pagination .pagination-item[for="3"]{
+    background: #fff;
+}
+
+input[id="4"]:checked ~ .slide{
+    animation: none;
+    transform: translate3d(calc(-100% * 3), 0, 0);
+}
+
+input[id="4"]:checked ~ .pagination .pagination-item[for="4"]{
+    background: #fff;
+}
+
+input[id="5"]:checked ~ .slide{
+    animation: none;
+    transform: translate3d(calc(-100% * 4), 0, 0);
+}
+
+input[id="5"]:checked ~ .pagination .pagination-item[for="5"]{
+    background: #fff;
+}
+
+input[id="6"]:checked ~ .slide{
+    animation: none;
+    transform: translate3d(calc(-100% * 5), 0, 0);
+}
+
+input[id="6"]:checked ~ .pagination .pagination-item[for="6"]{
+    background: #fff;
+}
+
+@keyframes autoplay{
+    16.6666666667%{
+        transform: translate3d(calc(-100% * 0), 0, 0);
+    }
+    
+    33.3333333334%{
+        transform: translate3d(calc(-100% * 1), 0, 0);
+    }
+    
+    50.0000000001%{
+        transform: translate3d(calc(-100% * 2), 0, 0);
+    }
+
+    66.6666666668%{
+        transform: translate3d(calc(-100% * 3), 0, 0);
+    }
+    
+    83.3333333335%{
+        transform: translate3d(calc(-100% * 4), 0, 0);
+    }
+    
+    100%{
+        transform: translate3d(calc(-100% * 5), 0, 0);
+    }
+}
+
+.noticias{
+width: 100%;
+font-size: 25px;
+font-family: "Homer Simpson", cursive;
+text-align: center;
+padding: 3px;
+}
+/*mi colegio*/
+.presentacion{
+    width: 90%;
+    margin:20px auto;
+    display: table;
+    border:  3px solid red;
+    background:yellow;
+}
+
+.presentacion img{
+    whidth: 500px;
+    height: 400px;
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.presentacion article{
+   margin: 0;
+   padding: 0 50px;
+   display: table-cell;
+   background:yellow;
+   vertical-align: middle;
+   font-family: "Comic Sans MS", cursive, sans-serif;
+   animation: escalar 1.5s infinite alternate;
+}
+@keyframes escalar{
+    to{
+        transform: scale(1);
+    }
+    from{
+        transform: scale(1.02);
+    }
+}
+/*diseño imagenes*/
+.portafolio-container{
+display: flex;
+width: 100%;
+justify-content: space-around;
+flex-wrap: wrap;
+max-width: 90%;
+margin: 20px auto;
+background:#CAC7E3;
+padding-top: 30px;
+border-radius: 40px;
+border:  3px solid #0000FF;
+}
+
+.portafolio-item{
+    width: 350px;
+    height: 250px;
+    margin-bottom: 30px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 50px;
+    border:  3px solid #9389EA;
+}
+
+.portafolio-img{
+    width: 100%;
+    object-fit: cover;
+    -webkit-transition: all 0.5s;
+    transition: all 0.5s;
+}
+
+.portafolio-text{
+    position: absolute;
+    bottom: 0;
+    padding: 20px;
+    background: rgba(0,0,0,0.7);
+    color: #fff;
+    -webkit-transform: translateY(100%);
+    -ms-transform: translateY(100%);
+    transform: translateY(100%);
+    -webkit-transition: all 0.5s ease-out;
+    transition: all 0.5s ease-out;
+}
+
+.portafolio-text p{
+    text-align: justify;
+}
+
+.portafolio-item:hover .portafolio-text{
+    -webkit-transform: translateY(0%);
+    -ms-transform: translateY(0%);
+    transform: translateY(0%);
+}
+
+.portafolio-item:hover .portafolio-img{
+    -webkit-transform: scale(1.15);
+    -ms-transform: scale(1.15);
+    transform: scale(1.15);
+}
+aside{
+width: 100%;
+background-color:yellow;
+height:200px
+}
+footer{
+	width: 100%;
+	background:black; 
+	padding: 30px;
+}
+footer p{
+margin: 3px;
+font-family: 'Arial';
+font-style: italic;
+color: white;
+}
+footer a{
+    margin: 4px;
+}
+footer div{
+    margin: 15px 0px auto;
+    text-align: center;
+    color: white;
+
+}
+@media screen and (max-width: 365px){
+.acceso2{
+    display: inline-grid;
+    list-style-type: none;
+    margin:  0;
+    padding: 0;
+    float: right;
+}
+}
+@media screen and (max-width: 1260px){
+main{
+padding-top: 87px;
+}
+.menu_bar{
+	display: block;
+	width: 99%;
+	position: fixed;
+	top: 0;
+	background: black;
+	z-index: 1000;
+}
+.menu_bar .bt-menu{
+	display: block;
+	padding: 20px;
+	color: #fff;
+	overflow: hidden;
+	font-size: 25px;
+	font-weight: bold;
+	text-decoration: none;
+}
+.menu_bar span{
+	float: right;
+	font-size: 40px;
+}
+.listash nav{
+width: 60%;
+height: calc(100% - 100px);
+position: fixed;
+right: 100%;
+margin: 0;
+overflow: scroll;
+top:87px;
+left: 0.5%;
+}
+.listash nav ul li{
+	display: block;
+	border-bottom: 1px solid rgba(255,255,255,.5); 
+}
+.listash nav ul li a{
+	display: block;
+}
+
+.listash nav ul li .children{
+	width: 100%;
+	position: relative;
+}
+.listash nav ul li .children li a{
+	margin-left: 20px;
+}
+.listash nav ul li .caret{
+	float: right;
+}
+}
+/*tamaño de logo*/
+@media screen and (max-width: 550px){
+.prueba{
+    width: 160px;
+    height: 55px;
+    position: relative;
+    float: left;
+    top: 27px;
+    left: 5px;
+}
+}
+@media screen and (max-width: 1200px){
+.presentacion img{
+ width: 100%;
+ margin-left: auto;
+ margin-right: auto;
+ display: block;
+ object-fit: cover;
+}
+.presentacion article{
+   margin: 0;
+   padding: 0 50px;
+   display: inline-block;
+   background:yellow;
+   vertical-align: middle;
+   font-family: "Comic Sans MS", cursive, sans-serif;
+   animation: escalar 1.5s infinite alternate;
+}
+
+}
